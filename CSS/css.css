@@ -4,7 +4,7 @@ body {
 
 
 h1,h2,h3,h4,h5,h6,p{
-  font-family: Arial Black;
+  font-family: verdana;
   font-style: ; /* Cursive */
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* horizontal-shadow vertical-shadow blur color(red, green, blue, opacity) */
   text-align: center;
@@ -64,6 +64,6 @@ nav a:hover{ /* How it looks when you hover with muose */
 }
 body {
         background-color:black;
-        background-image:url("klocka.png");
-        background-size:100% 900%;
+        background-image:url("dfsfsdfds.jpg");
+        background-size:110% 1010%;
       }
