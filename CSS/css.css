@@ -80,14 +80,7 @@ body {
         background-size:100% 100%;
       }
 
-      .flip-container {
-  margin-right:125px;
-  float:right;
-  margin: 5px 200px 200px -200px;
-  border: 3px none solid; /* border-width border-color border-style*/
-  border-radius: 15px;
-  background-color: none;
-}
+
 
 .Innehall{
   margin-left: 125px;
@@ -104,127 +97,118 @@ body {
   text-align: left;
 }
 
-.flip-container {
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
-
-  border: 1px solid #ccc;
+.produkter{
+  padding: 85px 0px 0px 205px;
 }
 
-  .flip-container:hover .flipper,  
-  .flip-container.hover .flipper {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
-
-.flip-container, .front, .back {
-  width: 220px;
-  height: 300px;
+.visaProdukter{
+  display:none;
+}
+.visaProdukter:target{
+  display:block;
 }
 
-.flipper {
-  -webkit-transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
-
-  -moz-transition: 0.6s;
-  -moz-transform-style: preserve-3d;
-  
-  -o-transition: 0.6s;
-  -o-transform-style: preserve-3d;
-
-  transition: 0.6s;
-  transform-style: preserve-3d;
-
-  position: relative;
-  
+.itemContainer{
+  float:left;
+  background-color:grey;
+  height:500px;
+  width:400px;
+  border:solid black 5px;
+  margin:30px 0px 0px 30px;
+  border-radius:0px;
+}.itemContainer:hover{
+    background-color:grey;
 }
 
-.front, .back {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 300px;
+.itemPicture{
+  height:250px;
+  width:375px;
+  margin:10px 0px 0px 10px;
+  border:solid black 2px;
+  border-bottom:0px;
+  border-radius:0px 0px 0px 0px;
+}
+.itemPicture img{
+  height:250px;
+  width:375px;
+  border-radius:0px 0px 0px 0px;
 }
 
-.front {
-  background: url(file:///C:/Users/admusr/Desktop/dasdasdasdasdas.jpg) 0 0 no-repeat;
-  background: url(file:///C:/Users/admusr/Desktop/armani.jpg) 0 0 no-repeat;
-  background: url(file:///C:/Users/admusr/Desktop/dasdasdasdasdas.jpg) 0 0 no-repeat;
-  z-index: 2;
+.itemName{
+  background-color:grey;
+  height:15px;
+  width:166px;
+  margin-left:10px;
+  padding:30px 120px 0px 95px;
+  border-top:solid black 2px;
+ 
+}
+.itemName p{
+  margin:0px 0px 0px 0px;
+  text-align:center;
+  font-weight:bold;
+  font-size:25px;
+}
 
+.itemInfoBox{
+  background-color:grey;
+  height:70px;
+  width:166px;
+  margin:0px 0px 0px 10px;
+  padding:70px 100px 0px 95px;
+}
+.itemInfoBox p{
+  margin:0px;
+  word-break:break-all;
 }
 
 
-.back {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-
-  background: #f8f8f8;
-
+.itemPrice{
+  background-color:grey;
+  float:left;
+  height:46px;
+  width:112px;
+  border-radius:0px 0px 0px 5px;
+}
+.itemPrice p{
+  color:black;
+  margin:12px 0px 0px 0px; /* To center text vertically */
+  text-align:center;
+  font-size:16px;
+  font-weight:bold;
 }
 
-.front .name {
-  font-size: 1em;
-  display: inline-block;
-  background: rgba(33, 33, 33, 0.9);
-  color: #f8f8f8;
-  font-family: Courier;
-  padding: 5px 10px;
-  border-radius: 5px;
-  bottom: 60px;
-  left: 25%;
-  position: absolute;
-  text-shadow: 0.1em 0.1em 0.05em #333;
-
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  transform: rotate(-20deg);
+.itemButtonContainer{
+  background-color:grey;
+  width:166px;
+  height:46px;
+  margin:0px 0px 0px 10px;
+  padding:0px 120px 0px 95px;
 }
 
-.back-logo {
-  position: absolute;
-  top: 40px;
-  left: 50px;
-  width: 260px;
-  height: 193px;
-  background: url(jpg) 0 0 no-repeat;
+.itemBuyButton{
+  margin:7px 0px 5px 0px;
+  float:right;
+  height:30px;
+  width:50px;
+  color:black;
+  border:solid black 2px;
+  background-color:white;
+  border-radius:5px;
+}
+.itemBuyButton:hover{
+  background-color:rgb(80,180,80);
+}
+.itemBuyButton :active {
+  color:red;
+} 
+.itemBuyButton p{
+  margin:0px 0px 0px 0px;
+  text-align:center;
+  font-size:25px;
 }
 
-.back-title {
-  font-weight: bold;
-  color: white;
-  position: absolute;
-  top: 196px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  text-shadow: 0.1em 0.1em 0.05em #acd7e5;
-  font-family: Courier;
-  font-size: 2em;
-}
 
-.back p {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 0 20px;
-  font-family: arial;
-  line-height: 2em;
-}
 
 .image{
   position: relative;
@@ -238,5 +222,24 @@ h2{
   top: 200px;
   left: 0;
   width: 100%;
+  color:white;
 }
 
+h5 {
+  position: absolute;
+  top: 150px;
+  left:0;
+  width:100%;
+  font-size:30px;
+  font-family: 'Brush Script MT', cursive;
+  color:white;
+}
+
+h3 {
+  position: absolute;
+  top:450px;
+  bottom: 500px;
+  width:100%;
+  font-size:30px;
+  color:white;
+}
